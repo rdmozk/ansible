@@ -1,9 +1,7 @@
 ---
-- name: install Emacs
-  apt:
-    install: 
-        apt:
-          name: emacs-nox
-          state: present
-  
-# tasks file for base
+- name: "Install Emacs"
+  ansible.builtin.apt:
+    name: emacs-nox
+    state: present
+
+
