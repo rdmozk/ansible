@@ -1,7 +1,4 @@
----
-- name: "Install Emacs"
-  ansible.builtin.apt:
-    name: emacs-nox
-    state: present
-
-
+- name: "install Emacs"
+  ansible.builtin.package:
+      name: emacs
+      state: present

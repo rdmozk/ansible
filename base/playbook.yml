@@ -1,4 +1,4 @@
 - name: My first play
   hosts: myhosts
-  tasks:
-    - "name": "Install Emacs"
+  role: 
+    - base
